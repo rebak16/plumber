@@ -1,23 +1,26 @@
 {% extends 'layout.html' %}
 
 {% block head %}
-    <script src="{{ url_for('static', filename='js/game.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/plumber.js') }}" defer></script>
 {% endblock %}
 
 {% block content %}
-    <nav class="navbar fixed-top navbar-light">
-        <button id="retry-button" class="btn btn-success">Try again?</button>
-        <a href="/" class="btn btn-outline-dark">Reset settings</a>
-    </nav>
     <div id="game-board">
         {% for row in range(row_num) %}
             <div>
                 {% for col in range(col_num) %}
-                    <div class="game-cell"
+                    <div class="game-cell" ondragover="allowDrop(event)" ondrop="drop(event)"
                          data-coordinate-x="{{ col }}"
                          data-coordinate-y="{{ row }}"></div>
                 {% endfor %}
             </div>
         {% endfor %}
     </div>
+    <div>
+        <img src="/static/images/1.png" id="image1" ondragstart="dragStart(event)">
+    </div>
+    <div class=image">
+        <img src="/static/images/2.png" id="image2" ondragstart="dragStart(event)">
+    </div>
+
 {% endblock %}
