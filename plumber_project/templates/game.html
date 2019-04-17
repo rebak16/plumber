@@ -10,7 +10,6 @@
 {% endblock %}
 
 {% block content %}
-
     <div id="game-board">
     <p><span id="countdowntimer">30</span></p>
         {% for row in range(row_num) %}
@@ -22,22 +21,19 @@
                 {% endfor %}
             </div>
         {% endfor %}
+
+        {% for row in range(1) %}
+            <div id="game-board">
+                {% for col in range(5) %}
+                    <div class="image" ondragover="allowDrop(event)" ondrop="drop(event)"
+                         data-coordinate-x="{{ col }}"
+                         data-coordinate-y="{{ row }}"></div>
+                {% endfor %}
+            </div>
+        {% endfor %}
     </div>
 
-    <div class="image">
-        <img src="/static/images/whiteWithBrown/9.png" id="image1" ondragstart="dragStart(event)" class="drag"
-             name="picture">
-        <img src="/static/images/whiteWithBrown/2_b.png" id="image2" ondragstart="dragStart(event)" class="drag"
-             name="picture">
-        <img src="/static/images/whiteWithBrown/7.png" id="image3" ondragstart="dragStart(event)" class="drag"
-             name="picture">
-        <img src="/static/images/whiteWithBrown/2_c.png" id="image4" ondragstart="dragStart(event)" class="drag"
-             name="picture">
-        <img src="/static/images/whiteWithBrown/2_a.png" id="image5" ondragstart="dragStart(event)" class="drag"
-             name="picture">
-    </div>
-
-    {#    <div class="image">
+{#    <div class="image">
         <img src="/static/images/blue/1_b.png" id="image1" ondragstart="dragStart(event)" class="drag" name="picture">
         <img src="/static/images/whiteWithBrown/2.png" id="image2" ondragstart="dragStart(event)" class="drag" name="picture">
         <img src="/static/images/whiteWithBrown/2_a.png" id="image3" ondragstart="dragStart(event)" class="drag" name="picture">
