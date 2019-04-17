@@ -15,7 +15,7 @@ function dragStart(ev) {
 }
 
 function drop(ev) {
-    if (ev.target.name !== "picture") {
+    if (ev.target.name !== "picture" && ev.target.className !== 'drag') {
         ev.target.append(document.getElementById(id));
     }
 }
@@ -35,7 +35,6 @@ function rotate() {
 
 rotate();
 
-
 function setTimer() {
     var timeleft = 30;
     var timer = setInterval(function () {
@@ -43,12 +42,13 @@ function setTimer() {
         document.getElementById("countdowntimer").textContent = timeleft;
         if (timeleft === 0) {
             clearInterval(timer);
-            alert('Game Over!')
+            alert('game over')
         }
+
         else if (win === 1) {
             clearInterval(timer);
-            alert('You Won!');
             let images = document.querySelectorAll('img');
+
                 for (image of images) {
                     if (image.id === "2_b") {
                         image.src = 'static/images/blue/2_b.png';
@@ -89,4 +89,5 @@ function textcontentCounter() {
 }
 
 textcontentCounter();
+
 
