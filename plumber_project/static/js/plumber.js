@@ -11,11 +11,10 @@ function allowDrop(ev) {
 
 function dragStart(ev) {
     id = ev.target.id;
-    console.log(id)
 }
 
 function drop(ev) {
-    if (ev.target.name !== "picture"){
+    if (ev.target.name !== "picture") {
         ev.target.append(document.getElementById(id));
     }
 }
@@ -34,14 +33,15 @@ function rotate() {
 }
 rotate();
 
-function winCondition() {
-/*    let cells = document.querySelectorAll('.game-cell');
+function textcontentCounter() {
+    let cells = document.querySelectorAll('.game-cell');
     for (let cell of cells) {
         cell.addEventListener('click',(event) => {
-            counter = (counter+1)%4;
-            event.target.textContent = counter;
-            console.log(event.target.className);
+            if (event.target.className !== 'game-cell') {
+                counter = (counter+1)%4;
+                event.target.textContent = counter;
+            }
         });
-    }*/
+    }
 }
-winCondition();
+textcontentCounter();

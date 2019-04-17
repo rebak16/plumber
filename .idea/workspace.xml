@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7730d9ff-8f2d-49aa-9c46-869b9b895307" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/plumber_project/static/js/lvl1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plumber_project/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/plumber_project/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plumber_project/static/images/blue/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plumber_project/static/images/blue/1_b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plumber_project/static/images/blue/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plumber_project/static/images/blue/8_b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plumber_project/static/images/blue/leak.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plumber_project/static/images/white/leak.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plumber_project/static/js/lvl1.js" beforeDir="false" afterPath="$PROJECT_DIR$/plumber_project/static/js/lvl1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plumber_project/static/js/plumber.js" beforeDir="false" afterPath="$PROJECT_DIR$/plumber_project/static/js/plumber.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plumber_project/templates/game.html" beforeDir="false" afterPath="$PROJECT_DIR$/plumber_project/templates/game.html" afterDir="false" />
     </list>
@@ -21,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/plumber$server.coverage" NAME="server Coverage Results" MODIFIED="1555494284177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plumber_project" />
+    <SUITE FILE_PATH="coverage/plumber$server.coverage" NAME="server Coverage Results" MODIFIED="1555506365754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plumber_project" />
   </component>
   <component name="FileEditorManager">
     <leaf>
@@ -43,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plumber_project/templates/game.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="7" selection-start-line="25" selection-start-column="5" selection-end-line="29" selection-end-column="130" />
+            <state relative-caret-position="150">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -55,41 +49,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plumber_project/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="180">
+              <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plumber_project/static/js/lvl1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="103" column="7" selection-start-line="103" selection-start-column="7" selection-end-line="103" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plumber_project/static/images/whiteWithBrown/8_b.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plumber_project/static/js/plumber.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13">
-              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            <state>
+              <caret column="22" selection-start-column="22" selection-end-column="22" />
               <folding>
-                <element signature="n#!!block;n#winCondition#0" />
+                <element signature="n#!!block;n#lvl1#0" />
+                <element signature="n#!!block;n#win#0" />
+                <element signature="n#!!block;n#win#1" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plumber_project/static/images/white/2_a.png">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/plumber_project/static/js/plumber.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+              <folding>
+                <element signature="e#132#170#0" />
+                <element signature="n#!!block;n#allowDrop#0" />
+                <element signature="n#!!block;n#dragStart#0" />
+                <element signature="n#!!block;n#drop#0" />
+                <element signature="n#!!block;n#rotate#0" />
+                <element signature="n#!!block;n#textcontentCounter#0" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -103,6 +97,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -112,9 +111,9 @@
         <option value="$PROJECT_DIR$/plumber_project/templates/index.html" />
         <option value="$PROJECT_DIR$/plumber_project/server.py" />
         <option value="$PROJECT_DIR$/plumber_project/static/css/style.css" />
-        <option value="$PROJECT_DIR$/plumber_project/static/js/plumber.js" />
         <option value="$PROJECT_DIR$/plumber_project/static/js/lvl1.js" />
         <option value="$PROJECT_DIR$/plumber_project/templates/game.html" />
+        <option value="$PROJECT_DIR$/plumber_project/static/js/plumber.js" />
       </list>
     </option>
   </component>
@@ -234,12 +233,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555487204536</updated>
-      <workItem from="1555487208666" duration="12402000" />
+      <workItem from="1555487208666" duration="26398000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12402000" />
+    <option name="totallyTimeSpent" value="26398000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="708" extended-state="6" />
@@ -252,7 +251,7 @@
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" weight="0.7253886" />
       <window_info anchor="bottom" id="Python Console" weight="0.3298791" />
-      <window_info anchor="bottom" id="Terminal" weight="0.9430052" />
+      <window_info anchor="bottom" id="Terminal" weight="0.47668394" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298791" />
@@ -321,41 +320,17 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/plumber_project/static/images/white/2_a.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plumber_project/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plumber_project/static/images/whiteWithBrown/8_b.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/plumber_project/static/images/whiteWithBrown/1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/plumber_project/static/images/blue/1_b.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/plumber_project/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/plumber_project/static/images/whiteWithBrown/8_b.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/plumber_project/static/js/plumber.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!block;n#winCondition#0" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/plumber_project/static/images/white/2_a.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/plumber_project/server.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -364,17 +339,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plumber_project/static/js/lvl1.js">
+    <entry file="file://$PROJECT_DIR$/plumber_project/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="103" column="7" selection-start-line="103" selection-start-column="7" selection-end-line="103" selection-end-column="7" />
+        <state relative-caret-position="90">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plumber_project/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plumber_project/templates/game.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="7" selection-start-line="25" selection-start-column="5" selection-end-line="29" selection-end-column="130" />
+        <state relative-caret-position="150">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plumber_project/static/js/plumber.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <element signature="e#132#170#0" />
+            <element signature="n#!!block;n#allowDrop#0" />
+            <element signature="n#!!block;n#dragStart#0" />
+            <element signature="n#!!block;n#drop#0" />
+            <element signature="n#!!block;n#rotate#0" />
+            <element signature="n#!!block;n#textcontentCounter#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plumber_project/static/js/lvl1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!block;n#lvl1#0" />
+            <element signature="n#!!block;n#win#0" />
+            <element signature="n#!!block;n#win#1" />
+          </folding>
         </state>
       </provider>
     </entry>

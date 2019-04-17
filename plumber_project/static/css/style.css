@@ -9,10 +9,22 @@
     width: 90px;
     height: 90px;
     font-size: 35px;
-    text-align: center;
     margin-right: -5px;
     margin-top: -1px;
     vertical-align: middle;
+}
+.image {
+    cursor: pointer;
+    border: 1px solid rgb(150,150,150);
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    font-size: 35px;
+    margin-right: -5px;
+    margin-top: -1px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(230,230,230);
 }
 
 img {
@@ -26,8 +38,17 @@ img {
 .image {
     text-align: center;
     margin-top: 10px;
+
 }
 
+img[name="picture"] {
+    user-drag: none;
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+}
 .image_rotate_270 {
     transform-origin: top left; /* IE 10+, Firefox, etc. */
     -webkit-transform-origin: top left; /* Chrome */
