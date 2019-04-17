@@ -11,7 +11,6 @@ function allowDrop(ev) {
 
 function dragStart(ev) {
     id = ev.target.id;
-    console.log(id)
 }
 
 function drop(ev) {
@@ -91,4 +90,5 @@ function winCondition() {
 }
 
 winCondition();
+
 

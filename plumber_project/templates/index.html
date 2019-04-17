@@ -1,7 +1,17 @@
 {% extends 'layout.html' %}
+{% block head %}
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>GAME</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+    <script src="{{ url_for('static', filename='js/plumber.js') }}" defer></script>
+{% endblock %}
 
 {% block content %}
+    <img src="static/images/leak.png">
+    <div class="drop"></div>
+    <div class="wave"></div>
     <form action="/game" method="GET">
-    <button type="submit">START!</button>
+        <button type="submit">Start to repair!</button>
     </form>
 {% endblock %}
