@@ -1,4 +1,5 @@
 var angle = 0;
+var counter =0;
 var originalcells = document.querySelectorAll('.game-cell')
 for (let originalcell of originalcells) {
     originalcell.textContent = "";
@@ -66,7 +67,7 @@ function addImages () {
 addImages();
 
 
-function winCondition() {
+function rotate() {
     let cells = document.querySelectorAll('.game-cell');
     for (let cell of cells) {
         cell.addEventListener('click',(event) => {
@@ -75,26 +76,18 @@ function winCondition() {
                 angle = (angle+90)%360;
                 img.className = "image_rotate_"+angle;
             }
+        });
+    }
+}
+rotate();
 
 
-
-
-            if (event.target.textContent === '0') {
-                event.target.textContent = '1';
-            }
-            else if (event.target.textContent === '1') {
-                event.target.textContent = '2';
-            }
-             else if (event.target.textContent === '2') {
-                event.target.textContent = '3';
-            }
-             else if (event.target.textContent === '3') {
-                event.target.textContent = '0';
-            }
-             else if (event.target.textContent === '') {
-                event.target.textContent = '1';
-            }
-
+function winCondition() {
+    let cells = document.querySelectorAll('.game-cell');
+    for (let cell of cells) {
+        cell.addEventListener('click',(event) => {
+            counter = (counter+1)%3;
+            event.target.textContent = counter;
             console.log(event.target.className);
         });
     }
