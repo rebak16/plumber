@@ -1,8 +1,8 @@
 {% extends 'layout.html' %}
 
 {% block head %}
-        <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
     <title>GAME</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
     <script src="{{ url_for('static', filename='js/plumber.js') }}" defer></script>
@@ -10,7 +10,9 @@
 {% endblock %}
 
 {% block content %}
+
     <div id="game-board">
+    <p><span id="countdowntimer">30 </span> Seconds left</p>
         {% for row in range(row_num) %}
             <div>
                 {% for col in range(col_num) %}
@@ -23,14 +25,19 @@
     </div>
 
     <div class="image">
-        <img src="/static/images/whiteWithBrown/9.png" id="image1" ondragstart="dragStart(event)" class="drag" name="picture">
-        <img src="/static/images/whiteWithBrown/2_b.png" id="image2" ondragstart="dragStart(event)" class="drag" name="picture">
-        <img src="/static/images/whiteWithBrown/7.png" id="image3" ondragstart="dragStart(event)" class="drag" name="picture">
-        <img src="/static/images/whiteWithBrown/2_c.png" id="image4" ondragstart="dragStart(event)" class="drag" name="picture">
-        <img src="/static/images/whiteWithBrown/2_a.png" id="image5" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/whiteWithBrown/9.png" id="image1" ondragstart="dragStart(event)" class="drag"
+             name="picture">
+        <img src="/static/images/whiteWithBrown/2_b.png" id="image2" ondragstart="dragStart(event)" class="drag"
+             name="picture">
+        <img src="/static/images/whiteWithBrown/7.png" id="image3" ondragstart="dragStart(event)" class="drag"
+             name="picture">
+        <img src="/static/images/whiteWithBrown/2_c.png" id="image4" ondragstart="dragStart(event)" class="drag"
+             name="picture">
+        <img src="/static/images/whiteWithBrown/2_a.png" id="image5" ondragstart="dragStart(event)" class="drag"
+             name="picture">
     </div>
 
-{#    <div class="image">
+    {#    <div class="image">
         <img src="/static/images/blue/1_b.png" id="image1" ondragstart="dragStart(event)" class="drag" name="picture">
         <img src="/static/images/whiteWithBrown/2.png" id="image2" ondragstart="dragStart(event)" class="drag" name="picture">
         <img src="/static/images/whiteWithBrown/2_a.png" id="image3" ondragstart="dragStart(event)" class="drag" name="picture">
