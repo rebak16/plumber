@@ -6,6 +6,7 @@
     <title>GAME</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
     <script src="{{ url_for('static', filename='js/plumber.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='js/lvl1.js') }}" defer></script>
 {% endblock %}
 
 {% block content %}
@@ -20,11 +21,57 @@
             </div>
         {% endfor %}
     </div>
-    <div>
-        <img src="/static/images/whiteWithBrown/1.png" id="image1" ondragstart="dragStart(event)" class="drag" name="picture">
+
+    <div class="image">
+        <img src="/static/images/whiteWithBrown/9.png" id="image1" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/whiteWithBrown/2_b.png" id="image2" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/whiteWithBrown/7.png" id="image3" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/whiteWithBrown/2_c.png" id="image4" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/whiteWithBrown/2_a.png" id="image5" ondragstart="dragStart(event)" class="drag" name="picture">
     </div>
-    <div class=image">
+
+{#    <div class="image">
+        <img src="/static/images/blue/1_b.png" id="image1" ondragstart="dragStart(event)" class="drag" name="picture">
         <img src="/static/images/whiteWithBrown/2.png" id="image2" ondragstart="dragStart(event)" class="drag" name="picture">
-    </div>
+        <img src="/static/images/whiteWithBrown/2_a.png" id="image3" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/whiteWithBrown/2_b.png" id="image4" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/whiteWithBrown/2_c.png" id="image5" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/whiteWithBrown/5.png" id="image6" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/whiteWithBrown/7.png" id="image7" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/blue/8_b.png" id="image8" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/whiteWithBrown/9.png" id="image9" ondragstart="dragStart(event)" class="drag" name="picture">
+
+        <img src="/static/images/whiteWithBrown/2.png" id="image11" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/whiteWithBrown/2_a.png" id="image12" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/whiteWithBrown/2_b.png" id="image13" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/whiteWithBrown/2_c.png" id="image14" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/whiteWithBrown/5.png" id="image15" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/whiteWithBrown/7.png" id="image16" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/whiteWithBrown/9.png" id="image18" ondragstart="dragStart(event)" class="drag" name="picture">
+
+        <img src="/static/images/whiteWithBrown/2.png" id="image20" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/whiteWithBrown/2_a.png" id="image21" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/whiteWithBrown/2_b.png" id="image22" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/whiteWithBrown/2_c.png" id="image23" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/whiteWithBrown/5.png" id="image24" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/whiteWithBrown/7.png" id="image25" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/whiteWithBrown/9.png" id="image27" ondragstart="dragStart(event)" class="drag" name="picture">
+
+        <img src="/static/images/white/2.png" id="image29" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/white/2_a.png" id="image30" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/white/2_b.png" id="image31" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/white/2_c.png" id="image32" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/white/5.png" id="image33" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/white/7.png" id="image34" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/white/9.png" id="image36" ondragstart="dragStart(event)" class="drag" name="picture">
+
+        <img src="/static/images/white/2.png" id="image38" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/white/2_a.png" id="image39" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/white/2_b.png" id="image40" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/white/2_c.png" id="image41" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/white/5.png" id="image42" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/white/7.png" id="image43" ondragstart="dragStart(event)" class="drag" name="picture">
+        <img src="/static/images/white/9.png" id="image45" ondragstart="dragStart(event)" class="drag" name="picture">
+    </div>#}
 
 {% endblock %}
