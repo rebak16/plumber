@@ -139,7 +139,7 @@ function win() {
                 pic2_child.parentNode === pic2 &&
                 pic3_child.parentNode === pic3 &&
                 pic4_child.parentNode === pic4) {
-                alert('You Win!')
+                win = 1;
             }
         });
     }
@@ -178,7 +178,7 @@ function win1() {
                 pic2_child.parentNode === pic2 &&
                 pic3_child.parentNode === pic3 &&
                 pic4_child.parentNode === pic4) {
-                alert('You Win!')
+                win = 1;
             }
         });
     }
