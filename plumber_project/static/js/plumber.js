@@ -1,5 +1,5 @@
 var angle = 0;
-var counter =0;
+var counter = 0;
 var originalcells = document.querySelectorAll('.game-cell');
 for (let originalcell of originalcells) {
     originalcell.textContent = "";
@@ -15,7 +15,7 @@ function dragStart(ev) {
 }
 
 function drop(ev) {
-    if (ev.target.name !== "picture"){
+    if (ev.target.name !== "picture") {
         ev.target.append(document.getElementById(id));
     }
 }
@@ -23,115 +23,72 @@ function drop(ev) {
 function rotate() {
     let cells = document.querySelectorAll('.game-cell');
     for (let cell of cells) {
-        cell.addEventListener('click',(event) => {
+        cell.addEventListener('click', (event) => {
             if (event.target.className !== 'game-cell' && event.target.className !== 'drag') {
                 img = event.target;
-                angle = (angle+90)%360;
-                img.className = "image_rotate_"+angle;
+                angle = (angle + 90) % 360;
+                img.className = "image_rotate_" + angle;
             }
         });
     }
 }
+
 rotate();
 
 
 function setTimer() {
     var timeleft = 30;
-    var downloadTimer = setInterval(function(){
-    timeleft--;
-    document.getElementById("countdowntimer").textContent = timeleft;
-    if(timeleft === 0) {
-        alert('Game over')
-        clearInterval(downloadTimer);
-    }
-    },1000);
+    var timer = setInterval(function () {
+        timeleft--;
+        document.getElementById("countdowntimer").textContent = timeleft;
+        if (timeleft === 0) {
+            clearInterval(timer);
+            let counter = 0;
+            let images = document.querySelectorAll('img[name="picture"]');
+            let switchImages = setInterval(function () {
+                for (image of images) {
+                    if (image.id === "2_b") {
+                        image.src = 'static/images/blue/2_b.png';
+                        counter++
+                    } else if (image.id === "5") {
+                        image.src = 'static/images/blue/5.png';
+                        counter++
+                    } else if (image.id === "2_c") {
+                        image.src = 'static/images/blue/2_c.png'
+                    } else if (image.id === "7") {
+                        image.src = 'static/images/blue/7.png'
+                    } else if (image.id === "image1") {
+                        image.src = 'static/images/blue/9.png'
+                    } else if (image.id === "image2") {
+                        image.src = 'static/images/blue/2_b.png'
+                    } else if (image.id === "image3") {
+                        image.src = 'static/images/blue/7.png'
+                    } else if (image.id === "image4") {
+                        image.src = 'static/images/blue/2_c.png'
+                    } else if (image.id === "image5") {
+                        image.src = 'static/images/blue/2_a.png'
+                    }
+                }
+                if (counter === 12) {
+                    clearInterval(switchImages)
+                }
+            }, 2000);
+        }
+    }, 1000);
 }
 
 setTimer();
 
 function winCondition() {
-/*    let cells = document.querySelectorAll('.game-cell');
-    for (let cell of cells) {
-        cell.addEventListener('click',(event) => {
-            counter = (counter+1)%4;
-            event.target.textContent = counter;
-            console.log(event.target.className);
-        });
-    }*/
+    /*    let cells = document.querySelectorAll('.game-cell');
+        for (let cell of cells) {
+            cell.addEventListener('click',(event) => {
+                counter = (counter+1)%4;
+                event.target.textContent = counter;
+                console.log(event.target.className);
+            });
+        }*/
 }
+
 winCondition();
 
-
-Countdown = function() {
-	_(this).bindAll('update', 'executeAnimation', 'finishAnimation');
-	this.setVars.apply(this, arguments);
-	this.update();
-};
-
-Countdown.prototype = {
-	duration: 1000,
-
-	setVars: function(time, el, template) {
-		this.max = time;
-		this.time = time;
-		this.el = el;
-		this.template = _(template.innerHTML).template();
-		this.delta = -1;
-	},
-
-	update: function() {
-		this.checkTime();
-		this.setSizes();
-
-		this.setupAnimation();
-		_(this.executeAnimation).delay(20);
-		_(this.finishAnimation).delay(this.duration * 0.9);
-
-		_(this.update).delay(this.duration);
-	},
-
-	checkTime: function() {
-		this.time += this.delta;
-
-		if (this.time === 0) this.delta = 1;
-		if (this.time === this.max) this.delta = -1;
-
-		this.delta === 1 ? this.toggleDirection('up', 'down') : this.toggleDirection('down', 'up');
-
-		this.nextTime = this.time + this.delta;
-	},
-
-	toggleDirection: function(add, remove) {
-		this.el.classList.add(add);
-		this.el.classList.remove(remove);
-	},
-
-	setSizes: function() {
-		this.currentSize = this.getSize(this.time);
-		this.nextSize = this.getSize(this.nextTime);
-	},
-
-	getSize: function(time) {
-		return time > 9 ? 'small' : '';
-	},
-
-	setupAnimation: function() {
-		this.el.innerHTML = this.template(this);
-		this.el.classList.remove('changed');
-	},
-
-	executeAnimation: function() {
-		this.el.classList.add('changing');
-	},
-
-	finishAnimation: function() {
-		this.el.classList.add('changed');
-		this.el.classList.remove('changing');
-	}
-};
-
-new Countdown(
-	12,
-	document.querySelector('.count'),
-	document.querySelector('#count-template')
-);
