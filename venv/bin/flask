@@ -1,6 +1,5 @@
-#!/bin/sh
-'''exec' "/home/rebak16/codecool/Python codes/Web/4th TW week/venv/bin/python" "$0" "$@"
-' '''
+#!/home/kruppa/codecool/web/4TW/plumber/venv/bin/python
+
 # -*- coding: utf-8 -*-
 import re
 import sys

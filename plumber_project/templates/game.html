@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>GAME</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/plumber.js') }}" defer></script>
+{% endblock %}
+
+{% block content %}
+    <div id="game-board">
+        {% for row in range(row_num) %}
+            <div>
+                {% for col in range(col_num) %}
+                    <div class="game-cell" ondragover="allowDrop(event)" ondrop="drop(event)"
+                         data-coordinate-x="{{ col }}"
+                         data-coordinate-y="{{ row }}"></div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+    <div>
+        <img src="/static/images/forDrag/1.png" id="image1" ondragstart="dragStart(event)">
+    </div>
+    <div class=image">
+        <img src="/static/images/forDrag/2.png" id="image2" ondragstart="dragStart(event)">
+    </div>
+
+{% endblock %}

@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/rebak16/codecool/Python codes/Web/4th TW week/venv"
+set -gx VIRTUAL_ENV "/home/kruppa/codecool/web/4TW/plumber/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

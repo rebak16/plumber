@@ -1,4 +1,4 @@
-#!"/home/rebak16/codecool/Python codes/Web/4th TW week/venv/bin/python"
+#!/home/kruppa/codecool/web/4TW/plumber/venv/bin/python
 # EASY-INSTALL-ENTRY-SCRIPT: 'pip==10.0.1','console_scripts','pip'
 __requires__ = 'pip==10.0.1'
 import re
