@@ -42,7 +42,8 @@ function setTimer() {
         document.getElementById("countdowntimer").textContent = timeleft;
         if (timeleft === 0) {
             clearInterval(timer);
-            alert('game over')
+            alert('game over');
+            window.location = 'http://0.0.0.0:5000';
         }
 
         else if (win === 1) {
