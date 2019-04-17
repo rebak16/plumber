@@ -2,6 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7730d9ff-8f2d-49aa-9c46-869b9b895307" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/plumber_project/static/images/white/2_a.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plumber_project/static/images/forDrag/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/plumber_project/static/images/blue/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plumber_project/static/images/forDrag/1_b.png" beforeDir="false" afterPath="$PROJECT_DIR$/plumber_project/static/images/blue/1_b.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plumber_project/static/images/forDrag/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/plumber_project/static/images/blue/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plumber_project/static/images/forDrag/2_a.png" beforeDir="false" afterPath="$PROJECT_DIR$/plumber_project/static/images/blue/2_a.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plumber_project/static/images/forDrag/2_b.png" beforeDir="false" afterPath="$PROJECT_DIR$/plumber_project/static/images/blue/2_b.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plumber_project/static/images/forDrag/2_c.png" beforeDir="false" afterPath="$PROJECT_DIR$/plumber_project/static/images/blue/2_c.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plumber_project/static/images/forDrag/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/plumber_project/static/images/blue/5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plumber_project/static/images/forDrag/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/plumber_project/static/images/blue/7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plumber_project/static/images/forDrag/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/plumber_project/static/images/blue/8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plumber_project/static/images/forDrag/8_b.png" beforeDir="false" afterPath="$PROJECT_DIR$/plumber_project/static/images/blue/8_b.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plumber_project/static/images/forDrag/9.png" beforeDir="false" afterPath="$PROJECT_DIR$/plumber_project/static/images/blue/9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plumber_project/static/images/forDrag/leak.png" beforeDir="false" afterPath="$PROJECT_DIR$/plumber_project/static/images/blue/leak.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plumber_project/static/images/forRotate/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/plumber_project/static/images/white/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plumber_project/static/images/forRotate/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/plumber_project/static/images/white/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plumber_project/static/images/forRotate/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/plumber_project/static/images/white/7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plumber_project/static/images/forRotate/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/plumber_project/static/images/white/8.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plumber_project/static/js/plumber.js" beforeDir="false" afterPath="$PROJECT_DIR$/plumber_project/static/js/plumber.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -11,7 +29,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/plumber$server.coverage" NAME="server Coverage Results" MODIFIED="1555490161620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plumber_project" />
+    <SUITE FILE_PATH="coverage/plumber$server.coverage" NAME="server Coverage Results" MODIFIED="1555491988361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/plumber_project" />
   </component>
   <component name="FileEditorManager">
     <leaf>
@@ -54,13 +72,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plumber_project/static/js/plumber.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="83" column="1" lean-forward="true" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
+            <state relative-caret-position="300">
+              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
               <folding>
                 <element signature="n#!!block;n#addImages#0" />
+                <element signature="n#!!block;n#winCondition#0" />
+                <element signature="n#!!block;n#winCondition#1" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plumber_project/static/images/white/2_a.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -130,12 +155,6 @@
               <item name="plumber_project" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="plumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="plumber" type="462c0819:PsiDirectoryNode" />
-              <item name="plumber_project" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -209,18 +228,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555487204536</updated>
-      <workItem from="1555487208666" duration="2578000" />
+      <workItem from="1555487208666" duration="4389000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2578000" />
+    <option name="totallyTimeSpent" value="4389000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="708" extended-state="6" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19318181" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19318181" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -229,7 +248,7 @@
       <window_info anchor="bottom" id="Terminal" weight="0.92918825" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298791" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3298791" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -274,12 +293,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/plumber_project/static/images/white/2_a.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/plumber_project/static/js/plumber.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="83" column="1" lean-forward="true" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
+        <state relative-caret-position="300">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
           <folding>
             <element signature="n#!!block;n#addImages#0" />
+            <element signature="n#!!block;n#winCondition#0" />
+            <element signature="n#!!block;n#winCondition#1" />
           </folding>
         </state>
       </provider>
