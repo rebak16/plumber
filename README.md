@@ -2,7 +2,7 @@
 
 It is a simple Plumber game with only one level yet.
 
-#Built with
+# Built with
 * JavaScript
 
 # How to use?
